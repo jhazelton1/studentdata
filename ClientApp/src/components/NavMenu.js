@@ -12,7 +12,7 @@ export class NavMenu extends Component {
       <Navbar inverse fixedTop fluid collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to={'/'}>WebApplication2</Link>
+            <Link to={'/'}>Student Data Set</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -25,12 +25,7 @@ export class NavMenu extends Component {
             </LinkContainer>
             <LinkContainer to={'/Students'}>
               <NavItem>
-                <Glyphicon glyph='th-list' /> Fetch data
-              </NavItem>
-            </LinkContainer>
-            <LinkContainer to={'/fetchdata'}>
-              <NavItem>
-                <Glyphicon glyph='th-list' /> Fetch data
+                <Glyphicon glyph='th-list' /> Student Statistics
               </NavItem>
             </LinkContainer>
           </Nav>

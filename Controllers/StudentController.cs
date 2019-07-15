@@ -13,10 +13,11 @@ namespace WebApplication2.Controllers
     [Route("api/[controller]")]
     public class StudentController : Controller
     {
+        string[] StudentFileLines = System.IO.File.ReadAllLines(@".\student-mat.csv");
+
         [HttpGet("[action]")]
         public List<Student> GetStudents()
         {
-            string[] StudentFileLines = System.IO.File.ReadAllLines(@"C:\Users\3717891\source\repos\WebApplication2\student-mat.csv");
 
             List<Student> students = new List<Student>();
 
@@ -54,7 +55,6 @@ namespace WebApplication2.Controllers
             return students;
 
         }
-
 
     }
 }
